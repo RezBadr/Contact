@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CreateContactActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_pofile"
+            android:layout_width="107dp"
+            android:layout_height="96dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="150dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/contact"
+            android:contentDescription="@string/contat_image" />
+
+        <ImageView
+            android:id="@+id/save_Profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            android:contentDescription="@string/save" />
+
+        <EditText
+            android:id="@+id/Text_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="285dp"
+            android:layout_marginEnd="5dp"
+            android:autofillHints="@string/phone_number"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone" />
+
+
+        <EditText
+            android:id="@+id/Text_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="5dp"
+            android:autofillHints="@string/name"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textColorHint="?android:attr/textColorHint" />
+
+        <EditText
+            android:id="@+id/Text_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="345dp"
+            android:layout_marginEnd="5dp"
+            android:autofillHints="@string/email"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/Text_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="465dp"
+            android:layout_marginEnd="9dp"
+            android:autofillHints="address"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Input_Birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="525dp"
+            android:layout_marginEnd="9dp"
+            android:autofillHints="birthday"
+            android:ems="10"
+            android:hint="@string/birthday"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Text_Note"
+            android:layout_width="404dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="585dp"
+            android:layout_marginEnd="0dp"
+            android:autofillHints="Note"
+            android:ems="10"
+            android:hint="Note"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:id="@+id/radioBtnGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="405dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Homme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homme" />
+
+            <RadioButton
+                android:id="@+id/Femme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Femme" />
+        </RadioGroup>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

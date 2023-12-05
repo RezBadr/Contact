@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ContactsApp</string>
+    <string name="Add_contact">Ajouter un contact</string>
+    <string name="add__image">Tap to Add an Image</string>
+    <string name="save">Save</string>
+    <string name="contat_image">Contat image</string>
+    <string name="phone_number">Phone number</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail address</string>
+    <string name="birthday">Birthday</string>
+    <string name="callphone">Call Phone</string>
+</resources>
